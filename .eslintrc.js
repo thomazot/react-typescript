@@ -23,6 +23,11 @@ module.exports = {
     },
     plugins: ["react", "import", "jsx-a11y"],
     rules: {
+        semi: [
+            "error",
+            "never",
+            { beforeStatementContinuationChars: "always" }
+        ],
         // Indent with 4 spaces
         indent: ["error", 4],
 

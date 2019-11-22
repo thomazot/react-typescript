@@ -23,6 +23,14 @@ module.exports = {
     },
     plugins: ["react", "import", "jsx-a11y"],
     rules: {
+        // Indent with 4 spaces
+        indent: ["error", 4],
+
+        // Indent JSX with 4 spaces
+        "react/jsx-indent": ["error", 4],
+
+        // Indent props with 4 spaces
+        "react/jsx-indent-props": ["error", 4],
         "react/jsx-filename-extension": [
             "error",
             {
@@ -31,7 +39,8 @@ module.exports = {
         ],
         "import/prefer-default-export": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-member-accessibility": "off"
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "@typescript-eslint/no-explicit-any": "off"
     },
     settings: {
         "import/parsers": {
